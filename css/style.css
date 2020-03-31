@@ -1,0 +1,279 @@
+* {
+    font-family: Tahoma;
+    box-sizing: border-box;
+    transition: .25s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+body{
+    font-family: Calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #444;
+}
+h2 {
+    font-family: Tahoma;
+}
+
+.header {
+    background-color: rgba(0,0,0,.25);
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    right: 2em;
+    z-index: 1;
+    border-radius:30px;
+}
+.header:hover{
+    background-color: rgba(0,0,0,.55);
+}
+.header div{
+    display: inline-block;
+}
+.navigation {
+    float: right;
+    margin-top: 1.3em;
+    margin-right: 5em;
+}
+.navigation div {
+    display: inline-block;
+    color: rgba(255, 255, 255, .7);
+    margin-left: 2em;
+    cursor:pointer;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navigation div:hover {
+    color: white;
+}
+.wraper {
+    position: relative;
+}
+.logo {
+    padding: .5em;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.intro-back {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.introduction {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0, .8),rgba(0,0,0, .45));
+}
+.intro h2 {
+    font-size: 48px;
+    margin-bottom: .125em;
+}
+.intro {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 8em;
+    right: 0;
+}
+.intro * {
+    color: white;
+}
+button {
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: orangered;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    opacity: .9;
+}
+.student-div img, .mentor-div img {
+    transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.student-div:hover img {
+    transform: translate(-30px, -28px);
+}
+.mentor-div:hover img {
+    transform: translate(-10px, -30px);
+}
+button.mentor {
+    color: #2aa9e0!important;
+    background-color: white;
+}
+button.student {
+    background-color: #2aa9e0;
+    color: white;
+}
+.student-div, .mentor-div, .contact-us {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    overflow:hidden;
+}
+.mentor-div .left-pane{
+    background-color:#2aa9e0;
+    
+}
+.mentor-div * {
+    color: white;
+}
+.left-pane,
+.right-pane {
+    width: 50%;
+    flex: 0 0 50%;
+    position: relative;
+    color: #2aa9e0;
+    overflow: hidden;
+}
+.left-pane img,
+.right-pane img{
+    height: 600px;
+    width: 800px;
+}
+
+.pane-wrapper {
+    position: absolute;
+    left: 10em;
+    top: 10em;
+    right: 10em;
+}
+.pane-info {
+    margin-bottom: 1em;
+}
+.testimonials {
+    padding: 1em;
+    background-color: rgba(0, 20, 255, .12);
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 5em;
+}
+.testimonial-cards  {
+    width: 25%;
+    display: inline-block;
+    height: 24em;
+}
+.testimonial-inner {
+    margin: 2em 2em;
+    height: 20em;
+    border-radius: 4px;
+}
+.testimony {
+    font-size: .9rem;
+    line-height: 1.4;
+}
+.circle {
+    text-align: center;
+}
+img.user {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid gainsboro;
+    object-fit: cover;
+}
+.body {
+    text-align: center;
+}
+.testimonials-title {
+    padding-left: 2em;
+}
+i {
+    font-size: 80px;
+    color: slateblue;
+    margin-left: .5em;
+}
+i.fb {
+    color: #4267b2;
+}
+i.tw {
+    color: #2aa9e0;
+}
+i.in {
+    color: #eb5153;
+}
+i.g {
+    color: #eb4235;
+}
+.intro .logo {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .header {
+        display: none;
+    }
+    .left-pane, .right-pane {
+        width: unset;
+    }
+    .student-div, .mentor-div, .contact-us {
+        display: block;
+        position: relative;
+    }
+    .student-div .left-pane, .mentor-div .left-pane {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        bottom: 10em;
+    }
+    .testimonial-cards {
+        width: unset;
+        display: block;
+        margin-left: unset!important;
+        height: unset;
+    }
+    .pane-wrapper {
+        position: unset;
+        padding: 1em;
+    }
+    .inner-picture {
+        margin-top: unset!important;
+    }
+    i {
+        font-size: 38px;
+    }
+    .contact-us {
+        height: unset;
+        padding-bottom: 1em;
+    }
+    .testimonials-title {
+        padding: .5em 1em;
+    }
+    .testimonials-title h2 {
+        font-size: 1.4em;
+    }
+    .testimonials {
+        padding: unset;
+    }
+    .mentor-div .left-pane {
+        background-color: rgba(42, 169, 224, 0.8901960784313725);
+    }
+    p {
+        width: unset!important;
+        margin: 1em;
+    }
+    .intro {
+        top: 1em;
+    }
+    .intro h2 {
+        margin-top: .5em;
+    }
+    .intro .logo {
+        display: block;
+    }
+}
+

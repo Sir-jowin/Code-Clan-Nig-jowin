@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+
+}
+body{
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #555;
+    background-color: #d9d9d95b;
+    text-align: center;
+    line-height: 1.5;
+
+}
+.tile-title {
+    font-size: 1.5rem;
+    letter-spacing: .06em;
+    /* transition: .15s cubic-bezier(0.47, 0, 0.745, 0.715); */
+}
+.tile-title h2 {
+    margin-bottom: .5em;
+}
+.tile-title span {
+    transition: .5s .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.tile-info {
+    letter-spacing: .08rem;
+    text-align: center;
+
+}
+.tile-info p {
+    border-top: 1px solid grey;
+    padding-top: 1em;
+    display: inline-block;
+    width: 30em;
+}
+.holder {
+    text-align: center;
+}
+.main .mentor-pic {
+    display: inline-block;
+    width: 20%;
+    height: 20em;
+    margin: 1em;
+}
+.mentor-pic .mentor-main {
+    background-color: white;
+    height: 20em;
+    width: 100%;
+    border: 1px solid gainsoro;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px gainsboro;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mentor-pic:hover {
+    opacity: .8;
+}
+.hole {
+    height: 70%;
+    background-color: gainsboro;
+    overflow:hidden;
+}
+.hole img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info {
+    text-align: start;
+    padding: 1em;
+}
+.name {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.position {
+    font-size: .9rem;
+}
+@media screen and (max-width: 900px) {
+    body {
+        margin-top: unset;
+        background-color: unset;
+    }
+    .wrapper {
+        box-shadow: unset;
+        margin-top: unset;
+    }
+}
