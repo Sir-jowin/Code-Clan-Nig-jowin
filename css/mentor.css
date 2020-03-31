@@ -87,4 +87,12 @@ body{
         box-shadow: unset;
         margin-top: unset;
     }
+    p {
+        width: unset!important;
+        margin: 1em!important;
+    }
+    .mentor-pic {
+        display: block!important;
+        width: unset!important;
+    }
 }
